@@ -33,9 +33,9 @@ public class Main {
 
         ConcurrentLinkedQueue<Thread> threadList = new ConcurrentLinkedQueue<>();
 
-        threadList.add(new myThread('a', maxA, queue1));
-        threadList.add(new myThread ('b', maxB, queue2));
-        threadList.add(new myThread('c', maxC, queue3));
+        threadList.add(new MyThread('a', maxA, queue1));
+        threadList.add(new MyThread('b', maxB, queue2));
+        threadList.add(new MyThread('c', maxC, queue3));
 
         for (Thread thread: threadList) {
             thread.start();

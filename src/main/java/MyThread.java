@@ -1,13 +1,13 @@
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class myThread extends Thread {
+public class MyThread extends Thread {
 
-    char letter;
-    AtomicInteger max;
-    ArrayBlockingQueue<String> queue;
+    private final char letter;
+    private final AtomicInteger max;
+    private final ArrayBlockingQueue<String> queue;
 
-    public myThread(char letter, AtomicInteger max, ArrayBlockingQueue<String> queue){
+    public MyThread(char letter, AtomicInteger max, ArrayBlockingQueue<String> queue){
         this.letter = letter;
         this.max = max;
         this.queue = queue;
